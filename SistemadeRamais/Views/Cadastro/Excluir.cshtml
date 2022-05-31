@@ -1,0 +1,14 @@
+﻿@model CadastroModel
+
+@{
+    ViewData["Title"] = "Excluir - Cadastro de Ramais";
+}
+
+<h2 style="text-align:center">Excluir- Cadastro de Ramais</h2>
+
+<p>Deseja realmente excluir o registro @Model.COLABORADOR_VC_RAMAL  ?  </p>
+
+
+
+<a role="button" class="btn btn-primary" asp-route-id="@Model.ID" asp-controller="Cadastro" asp-action="Deletar">Confirmar Exclusão</a>
+<a role="button" class="btn btn-danger" asp-controller="Cadastro" asp-action="Index">Cancelar</a>

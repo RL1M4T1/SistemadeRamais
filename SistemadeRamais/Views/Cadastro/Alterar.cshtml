@@ -1,0 +1,40 @@
+﻿@model CadastroModel 
+@{
+    ViewData["Title"] = "Alterar - Cadastro de Ramais";
+}
+
+<h2 style="text-align:center">Alterar - Cadastro de Ramais</h2>
+    
+<form asp-controller="Cadastro" asp-action="Editar" class="form-group">
+    <div class="form-group">
+
+      
+        <input type="hidden" asp-for="ID" class="form-control" >
+       
+        <div class="form-group">
+            <label for="Filial">Filial</label>
+            <input type="text" asp-for="FILIAL_VC_RAMAL" class="form-control" placeholder="Informe a filial do Colaborador">
+        </div>
+
+        <div class="form-group">
+            <label for="Colaborador">Colaborador</label>
+            <input type="text" asp-for="COLABORADOR_VC_RAMAL" class="form-control" id="2" placeholder="Informe o nome do colaborador">
+
+        </div>
+        <div class="form-group">
+            <label for="Setor">Setor</label>
+            <input type="text" asp-for="SETOR_VC_RAMAL" class="form-control" id="3" placeholder="Informe o setor">
+        </div>
+
+        <div class="form-group">
+            <label for="Ramal">Ramal</label>
+            <input type="text" asp-for="RAMAL_CH_RAMAL" class="form-control" id="4  " placeholder="Informe o ramal">
+
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary mb-3">Alterar</button>
+            <button type="submit" asp-controller="Cadastro" asp-action="Index" class="btn btn-primary mb-3">Cancelar</button>
+        </div>
+    </div>
+</form>
+
